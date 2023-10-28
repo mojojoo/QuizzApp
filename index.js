@@ -107,7 +107,7 @@ let jsons;
 
 //get the API using async functing
 async function getQuiz(value) {
-  const response = await fetch(`${API_URL}${values}&limit=50`);
+  const response = await fetch(`${API_URL}${value}&limit=50`);
   const json = await response.json();
 
   jsons = json;
